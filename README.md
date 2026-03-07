@@ -1,6 +1,6 @@
 # doc.nix
 
-doc.nix is a documentation generator for Nix runtime values.
+doc.nix helps when Nix docs drift from runtime values by attaching docs to values/shapes, inspecting in `nix repl`, and rendering Markdown from the same source.
 
 ````
 nix-repl> lib.what's lib.makeCommonMark
@@ -72,7 +72,7 @@ doc.nix
 lib.nix:282:9
 ````
 
-## lib.nix
+## API docs
 
 See [lib.md] for API documentation.
 
@@ -80,7 +80,7 @@ See [lib.md] for API documentation.
 
 ## Notice
 
-This is not a replacement for [nixdoc] nor [docnix].
+doc.nix complements [nixdoc] and [docnix]; it does not replace them.
 
 [nixdoc]: https://github.com/nix-community/nixdoc
 [docnix]: https://github.com/nix-community/docnix
