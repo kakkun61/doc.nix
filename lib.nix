@@ -785,7 +785,7 @@ let
                 let
                   pos = doc.pos;
                 in
-                "${pos.file}:${toString pos.line}:${toString pos.column}";
+                "[${pos.file}:${toString pos.line}](${pos.file}#L${toString pos.line}):${toString pos.column}";
           in
           if doc.level == "value" then
             ''
