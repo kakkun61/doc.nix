@@ -49,7 +49,7 @@
             lib-doc = pkgs.writeText "lib.md" ''
               # doc.nix library documentation
 
-              This document is generated and do not edit manually.
+              This document is auto-generated and do not edit manually.
 
               ${lib.makeCommonMark { } (lib.makeDocSet { } lib)}
             '';

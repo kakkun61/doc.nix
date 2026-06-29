@@ -1,6 +1,6 @@
 # doc.nix library documentation
 
-This document is generated and do not edit manually.
+This document is auto-generated and do not edit manually.
 
 ## lib
 
@@ -56,7 +56,7 @@ doc.nix
 
 `attachDoc` attaches documentation to a value.
 
-If the value already has a nix.doc document, it is returned as is without additional attachment. If the value is not an attribute set nor a function, it is returned as is without attaching documentation.
+If the value already has a nix.doc document, it is returned as is. If it is neither an attribute set nor a function, it is returned without documentation attached.
 
 ### Parameters
 
