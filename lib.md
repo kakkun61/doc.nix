@@ -56,7 +56,7 @@ doc.nix
 
 `attachDoc` attaches documentation to a value.
 
-If the value already has a nix.doc document, it is returned as is. If it is neither an attribute set nor a function, it is returned without documentation attached.
+If the value already has a doc.nix document, it is returned as is. If it is neither an attribute set nor a function, it is returned without documentation attached.
 
 ### Parameters
 

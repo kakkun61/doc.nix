@@ -484,7 +484,7 @@ let
         description = ''
           `attachDoc` attaches documentation to a value.
 
-          If the value already has a nix.doc document, it is returned as is. If it is neither an attribute set nor a function, it is returned without documentation attached.
+          If the value already has a doc.nix document, it is returned as is. If it is neither an attribute set nor a function, it is returned without documentation attached.
 
           # Parameters
 
@@ -628,7 +628,7 @@ let
                   __functor = self: detachDoc (attrs.__functor self);
                 };
               in
-              if lib.length (lib.attrNames attrs) == 1 then # `value` has form of `{ __functor = ...; "nix.doc" = ...; }`
+              if lib.length (lib.attrNames attrs) == 1 then # `value` has form of `{ __functor = ...; "doc.nix" = ...; }`
                 functor.__functor functor
               else
                 attrs // functor
